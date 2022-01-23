@@ -1,5 +1,6 @@
 // function that reveals players list
 function revealMessage() {
+    e.preventDefault()
     document.getElementById("bottomHalf").style.display = "block";
 
     document.getElementById("submitButton").onclick = function () {

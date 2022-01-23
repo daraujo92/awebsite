@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Raffles</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+
+    <!-- font-size: 6vw; -->
+    <h1 class="titlesText" style="margin-top: 5%; ">Crypto Raffles</h1>
+    <!-- font-size: 3vw; -->
+    <h4 class="titlesText" style="margin-top: 5%;">Participate! Wait! Get lucky!
+    </h4>
+    <form class="form" onSubmit="return false;">
+        <input type="text" class="formText" id="formText" placeholder="Type your ID" pattern="[a-z0-9A-Z]{3,9}"
+            title="Between 3 and 8 characters (A-Z, 0-9)" minlength="3" maxlength="9" required>
+        <button class="submitButton" id="submitButton" onclick="callTwo();">
+            Participate
+        </button>
+        <script type="text/javascript" src="js/newPlayer.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </form>
+
+    <br>
+    <br>
+    <!-- style=" display: none" -->
+    <div id="bottomHalf" class="bottomHalf titlesText" style="display: none">
+        <hr>
+        <h1 class="playersList bigTitle">Players</h1>
+        <ol id="players">
+        </ol>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

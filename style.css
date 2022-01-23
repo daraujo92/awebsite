@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous'); /*font-family: 'Righteous', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); /*font-family: 'Bungee', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*font-family: 'Press Start 2P', cursive;*/
+
+body {
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(135deg, #ddb0eb 20%, #bee2ff);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.titlesText {
+    color: white;
+    font-family: 'Press Start 2P', Helvetica, sans-serif;
+    font-style: normal;
+    text-shadow: 1.5px 1.5px 2px #000000;
+    padding: 0 3% 0 3%;
+}
+
+/* Container for form*/
+.form {
+    margin-top: 5%;
+}
+
+/*text form*/
+.formText {
+    width: auto;
+    font-family: 'Press Start 2P', Helvetica, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    position:relative;
+    margin-right: 1%;
+    border-radius: 8px;
+}
+
+/* changing submit button --- START*/
+.submitButton {
+    border: none;
+    background-color: inherit;
+    font-family: 'Press Start 2P', Helvetica, sans-serif;
+    font-size: 2vw;
+    cursor: pointer; 
+    margin-left: 1%;  
+
+}
+
+.submitButton:hover {
+    text-shadow: 3px 3px 1px white;
+    transform: translateY(-2px);
+}
+
+.submitButton:active {
+    text-shadow: none;
+    transform: translateY(0px);
+  }
+  /* changing submit button --- END*/

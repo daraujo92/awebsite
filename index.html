@@ -20,10 +20,10 @@
     <!-- font-size: 3vw; -->
     <h4 class="titlesText" style="margin-top: 5%;">Participate! Wait! Get lucky!
     </h4>
-    <form class="form" onSubmit="return false;">
+    <form class="form" onsubmit="revealMessage(event);">
         <input type="text" class="formText" id="formText" placeholder="Type your ID" pattern="[a-z0-9A-Z]{3,9}"
             title="Between 3 and 8 characters (A-Z, 0-9)" minlength="3" maxlength="9" required>
-        <button type="submit" class="submitButton" id="submitButton" onclick="revealMessage();">
+        <button type="submit" class="submitButton" id="submitButton">
             Participate
         </button>
 

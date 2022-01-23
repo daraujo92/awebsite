@@ -1,16 +1,13 @@
 // function that reveals players list
-function revealMessage() {
+function revealMessage(e) {
+    console.log(e)
     e.preventDefault()
     document.getElementById("bottomHalf").style.display = "block";
-
-    document.getElementById("submitButton").onclick = function () {
-
-        var node = document.createElement("Li");
-        var text = document.getElementById("formText").value;
-        var textnode = document.createTextNode(text);
-        node.appendChild(textnode);
-        document.getElementById("players").appendChild(node);
-    }
+    var node = document.createElement("Li");
+    var text = document.getElementById("formText").value;
+    var textnode = document.createTextNode(text);
+    node.appendChild(textnode);
+    document.getElementById("players").appendChild(node);
 }
 
 

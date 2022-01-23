@@ -9,7 +9,8 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/newPlayer.js"></script> -->
 </head>
 
 <body>
@@ -22,11 +23,11 @@
     <form class="form" onSubmit="return false;">
         <input type="text" class="formText" id="formText" placeholder="Type your ID" pattern="[a-z0-9A-Z]{3,9}"
             title="Between 3 and 8 characters (A-Z, 0-9)" minlength="3" maxlength="9" required>
-        <button class="submitButton" id="submitButton" onclick="callTwo();">
+        <button class="submitButton" id="submitButton" onclick="revealMessage();">
             Participate
         </button>
-        <script type="text/javascript" src="js/newPlayer.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+
+
     </form>
 
     <br>
@@ -35,7 +36,7 @@
     <div id="bottomHalf" class="bottomHalf titlesText" style="display: none">
         <hr>
         <h1 class="playersList bigTitle">Players</h1>
-        <ol id="players">
+        <ol id="players" style="text-align: center;">
         </ol>
 
 </body>
